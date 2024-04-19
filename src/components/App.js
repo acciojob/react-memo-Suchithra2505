@@ -42,6 +42,7 @@ const App = () => {
       <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
       <button id="increment-btn" onClick={handleIncrement}>Increment</button>
       <input
+        id="skill-input"
         type="text"
         value={customTask}
         onChange={handleCustomTaskChange}
