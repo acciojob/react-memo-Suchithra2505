@@ -1,4 +1,6 @@
 
+
+
 import React, { useState } from 'react';
 import UseMemo from './UseMemo';
 import ReactMemo from './ReactMemo';
@@ -29,21 +31,30 @@ const App = () => {
     }
   };
 
+  const handleRemoveTask = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks.splice(index, 1);
+    setTasks(updatedTasks);
+  };
+
   return (
-    <div id="main">
-      <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
-      <button id="incr-cnt" onClick={handleIncrement}>Increment</button>
+    <div>
+      <button onClick={handleAddTodo}>Add todo</button>
+      <button onClick={handleIncrement}>Increment</button>
       <input
         type="text"
         value={customTask}
         onChange={handleCustomTaskChange}
         placeholder="Enter custom task"
       />
-      <button id="skill-input" onClick={handleCustomTaskSubmit}>Submit</button>
+      <button onClick={handleCustomTaskSubmit} id="submit-btn">Submit</button>
 
       <ul>
         {tasks.map((task, index) => (
-          <li key={index}>{task}</li>
+          <li key={index}>
+            {task}
+            <button id={`todo-${index}`} onClick={() => handleRemoveTask(index)}>Remove</button>
+          </li>
         ))}
       </ul>
 
@@ -56,4 +67,3 @@ const App = () => {
 };
 
 export default App;
-
