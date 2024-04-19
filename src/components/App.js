@@ -38,9 +38,9 @@ const App = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleAddTodo}>Add todo</button>
-      <button onClick={handleIncrement}>Increment</button>
+    <div id="main">
+      <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
+      <button id="increment-btn" onClick={handleIncrement}>Increment</button>
       <input
         type="text"
         value={customTask}
