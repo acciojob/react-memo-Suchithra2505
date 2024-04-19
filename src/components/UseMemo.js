@@ -8,7 +8,7 @@ const UseMemo = () => {
   }, [count]);
 
   return (
-    <div>
+    <div id="main">
       <h2>UseMemo Example</h2>
       <p>Counter: {count}</p>
       <p>{isEven ? 'Even' : 'Odd'}</p>
