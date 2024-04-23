@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div id="main">
       <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
-      <button id="increment-btn" onClick={handleIncrement}>Increment</button>
+      <button id="increment-btn" onClick={handleIncrement}>0</button>
       <input
         id="skill-input"
         type="text"
@@ -54,7 +54,7 @@ const App = () => {
         {tasks.map((task, index) => (
           <li key={index}>
             {task}
-            <button id={`todo-${index}`} onClick={() => handleRemoveTask(index)}>Remove</button>
+            <button id={`todo-${index}`} onClick={() => handleRemoveTask(index)}>New Todo</button>
           </li>
         ))}
       </ul>
