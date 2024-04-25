@@ -40,6 +40,7 @@ const App = () => {
   return (
     <div id="main">
       <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
+      <b>Count:</b>
       <button id="increment-btn" onClick={handleIncrement}>+</button>
       <input
         id="skill-input"
@@ -48,7 +49,7 @@ const App = () => {
         onChange={handleCustomTaskChange}
         placeholder="Enter custom task"
       />
-      <button onClick={handleCustomTaskSubmit} id="submit-btn">Submit</button>
+      <button onClick={handleCustomTaskSubmit} id="kill-btn">Add Skill</button>
 
       <ul>
         {tasks.map((task, index) => (
