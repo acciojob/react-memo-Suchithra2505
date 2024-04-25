@@ -43,7 +43,7 @@ const App = () => {
       <b>Count:</b>
       <button id="increment-btn" onClick={handleIncrement}>+</button>
       <input
-        id="skill-input"
+        id="item-jumbotron"
         type="text"
         value={customTask}
         onChange={handleCustomTaskChange}
