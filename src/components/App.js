@@ -40,10 +40,12 @@ const App = () => {
   return (
     <div id="main">
       <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
-      <b>Count:</b>
+      <div id="item-jumbotron">
+      <b>Count:{counter}</b>
+      </div>
       <button id="increment-btn" onClick={handleIncrement}>+</button>
       <input
-        id="item-jumbotron"
+        id="skill-input"
         type="text"
         value={customTask}
         onChange={handleCustomTaskChange}
