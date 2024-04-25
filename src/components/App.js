@@ -49,7 +49,7 @@ const App = () => {
         onChange={handleCustomTaskChange}
         placeholder="Enter custom task"
       />
-      <button onClick={handleCustomTaskSubmit} id="kill-btn">Add Skill</button>
+      <button onClick={handleCustomTaskSubmit} id="skill-btn">Add Skill</button>
 
       <ul>
         {tasks.map((task, index) => (
