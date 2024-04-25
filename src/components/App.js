@@ -41,7 +41,7 @@ const App = () => {
     <div id="main">
       <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
       
-      <button id="increment-btn" onClick={handleIncrement}>0</button>
+      <button id="increment-btn" onClick={handleIncrement}>{counter}</button>
       <input
         id="skill-input"
         type="text"
