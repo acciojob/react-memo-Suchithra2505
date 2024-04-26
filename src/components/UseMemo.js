@@ -11,7 +11,7 @@ const UseMemo = () => {
     <div id="calc">
       <h2>UseMemo Example</h2>
       <p id="incr-cnt">Counter: {count}</p>
-      <p>{isEven ? '1000000000' : 'Odd'}</p>
+      <p>{isEven ? '1000000000' : '1000000001'}</p>
       
       <button onClick={() => setCount(count + 1)} id="incr-btn">+<b>{count}</b></button>
     </div>
